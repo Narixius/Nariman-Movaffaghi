@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Assignment#2</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font-weight: bold;
+			font-family: Arial;
+		}
+		.bold {
+			font-weight: bold;
+		}
+		.text-white {
+			color: white;
+		}
+		.bg-primary {
+			background-color: #3574B4;
+		}
+		.bg-blue-light {
+			background-color: #AACDEA;
+		}
+		.bg-gray {
+			background-color: #E9EAEB;
+		}
+		div.bg-primary{
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		.px-norm {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.py-norm {
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		input, textarea {
+			background: #E5E5E5;
+			border: 0;
+			display: block;
+			margin-bottom: 5px;
+			width: 100%;
+			padding: 8px;
+		}
+		button {
+			border: 0;
+			display: block;
+			width: 100%;
+		}
+		.parent {
+			display: flex;
+			flex-direction: column;
+			height: calc(100% - 30px);
+		}
+		.tasks {
+			border-radius: 8px 8px 0 0;
+			margin-top: 10px;
+		}
+		.child {
+			background: #AACDEA;
+			margin-top: 0;
+			text-align: center;
+			font-weight: 300;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			display: flex;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="bg-primary text-white px-norm">
+			<p>Task Management > Home</p>
+		</div>
+		<div class="px-norm">
+			<br />
+			<p class="bold">Add a new Task</p>
+			<br />
+			<input placeholder="Text" type="text">
+			<textarea rows="5" placeholder="Description"></textarea>
+			<button class="bg-primary text-white py-norm">Add</button>
+		</div>
+		<div class="tasks parent bg-primary">
+			<p class="text-white px-norm py-norm">Tasks</p>
+			<div class="child tasks px-norm py-norm">
+				<p>You have nothing to do.</p>
+				<p>Go get some sleep.</p>
+			</div>
+		</div>
+	</div>
+	<a href="/Assignment2/question1.html">Question 1</a>
+	<a href="/Assignment2/question2.html">Question 2</a>
+	<a href="/Assignment2/question3.html">Question 3</a>
+</body>
+</html>
